@@ -14,10 +14,8 @@ return new class extends Migration
         Schema::create('gurus', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('nip')->unique();
-            $table->enum('jenis_kelamin', ['laki-laki', 'perempuan']);
-            $table->text('alamat');
-            $table->string('no_hp');
+            $table->string('nip');
+            $table->string('mapel');
             $table->timestamps();
         });
     }
