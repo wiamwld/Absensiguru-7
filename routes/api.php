@@ -11,3 +11,6 @@ Route::get('/user', function (Request $request) {
 Route::get('guru', [GuruController::class, 'index']);
 Route::post('guru', [GuruController::class, 'store']);
 Route::get('guru/{id}',[GuruController::class,'show']);
+Route::get('absensi', [AbsensiController::class, 'index']);
+Route::post('absensi', [AbsensiController::class, 'store']);
+Route::get('absensi/{id}',[AbsensiController::class,'show']);
